@@ -1,0 +1,26 @@
+
+.tituloError{
+    color: $color-secundario;
+    font-size: map-get($tamaño-fuentes, h1);
+    text-align: center;
+}
+p{
+    color: $color-parrafos;
+    font-size: map-get($tamaño-fuentes, h1);
+    text-align: center;
+}
+.alineacion{
+    display: flex;
+    direction: column;
+    justify-content: center;
+}
+.botonVolver{
+    color: $color-principal;
+    background-color: $color-botones;
+    font-weight: bold;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin: 1.5rem;
+    padding: 0.4rem;
+    font-size: map-get($tamaño-fuentes, h3);
+}

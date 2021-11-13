@@ -1,0 +1,545 @@
+/*UNIVERSAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Ford Antenna', Open sans-serif;
+}
+/*HEADER*/
+
+header{
+    background-color: #203556;
+    height: 7rem;
+    box-shadow: 2px 7px 9px 3px rgba(73,89,111,0.6);
+    z-index: 1;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 9rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1.3rem;   
+}
+nav ul li{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.507);
+}
+.linkActive{
+    background-color: rgba(254, 254, 255, 0.192);
+}
+
+/*SUBMENU*/
+.submenu{
+    position: relative;
+    color: #FFFFFF;
+    z-index: 1;
+}
+ul ul{
+    display: none;
+    position: absolute;
+    /* width: 60%; */
+    
+}
+ul ul li{
+    display: block;
+    background-color: #203556;
+    height: 41px;
+    margin: auto;
+}
+ul li a{
+    padding: 1rem;
+    
+}
+ul li:hover ul{
+    display: block;
+}
+.dropdownColor{
+    color: #FFFFFF;
+}
+
+/*MAIN*/
+/*SECCION 1 - HOME*/
+.altoCarousel{
+    height: 600px;
+}
+
+h1{
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-family: Ford Antenna medium;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 6rem;
+    margin-left: 2.5rem;
+    animation: rollIn;
+    animation-duration: 2s;
+}
+.portada{
+    display: flex;
+    position: relative;
+    justify-content: center; 
+}
+
+/*SECCION 1 - USADOS*/
+.h1Usados{
+    color: rgb(8 85 244);
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin: -34% 0 30% 1.5%
+}
+
+/*SECCION 1 - NOSOTROS*/
+.parrafoNosotros{
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    color: rgb(133, 130, 136);
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+    text-align: justify;
+    margin: 1.25rem;
+    padding: 2rem;
+}
+.listaValores{
+    text-align: center;
+    list-style: none;
+    margin: 1.25rem;
+    margin-bottom: 10%;
+    padding: 2rem;
+    font-size: 1rem; 
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(133, 130, 136);
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+}
+
+/*SECCION 1 - POSVENTA*/
+.parrafosPosventa{
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    color: rgb(133, 130, 136);
+    text-align: left;
+    width: 37.5rem; 
+}
+.imagenesPosventa{
+    display: flex;
+    margin: 3rem;
+    padding: 5% 0% 5% 0%;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68) 
+}
+/*SECTION 1 - 0KM PICK UPS Y SUV*/
+.imagenesOkm{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+div button{
+    background-color: #0A121F;
+    border: 1px solid #0A121F;
+    padding: 10px;
+    margin-left: 30px;
+}
+button a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Ford Antenna;   
+}
+.parrafo0km{
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: #2367C6;
+    width: 25rem;
+    font-weight: bold;
+    margin: 4%;
+}   
+/*SECTION 2 - HOME*/
+h2{
+    color: #0B2D5E;
+    font-family: Ford Antenna medium;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    font-size: 1.875rem;
+    margin-top: 5rem;
+    
+}
+.h2titulo{
+    color: #0B2D5E;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    font-size: 1.875rem;
+    margin: 5% 0 2% 0;
+}
+h3{
+    font-size: 1.125rem;
+    color: #2367C6;
+    font-weight: bold;
+    padding-top: 1rem
+}
+
+/*SECTION 2 - SERVICIOS*/
+.divServicios{
+    background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(190,217,224,1) 52%, rgba(135,226,247,1) 100%);
+    padding: 3rem;
+}
+.textoImagenes{
+    font-size: 0.875rem;
+    color: rgb(82, 82, 82);
+    padding-bottom: 1rem
+}
+/*SECTION 2 - Bronco*/
+.parrafosBronco{
+    font-size: 0.875rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    color: rgb(133, 130, 136);
+    text-align: justify;
+    margin: 1.25rem;
+    padding: 1.563rem;
+    width: 37.5rem;
+    height: 18.75rem;
+}
+.imagenExterior{
+    display: flex;
+    text-align: center;
+    margin:2rem;
+    padding: 5% 5% 0% 5%;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+    background: linear-gradient(-90deg, rgba(254,254,255,1) 0%, rgba(190,217,224,1) 52%, rgba(164,211,222,1) 100%);
+}
+.imagenInterior{
+    display: flex;
+    text-align: center;
+    margin:2rem;
+    padding: 4rem;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+    background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(190,217,224,1) 52%, rgba(164,211,222,1) 100%);
+}
+table{
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);;
+    color: rgb(133, 130, 136);
+    width: 70%;
+    margin: 5% 5% 10% 15%;
+}
+th{
+    color: rgb(26, 46, 138);
+    font-size: 1.125rem;
+    padding: 0.625rem;
+}
+td{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.938rem;
+}
+/* SECTION 2 - USADOS*/ 
+/*Oportunidades*/
+.h2Oportunidades{
+    color: rgb(32, 32, 134);
+    text-align: center;
+    letter-spacing: 0.4rem;
+    font-size: 1.875rem;
+    padding-top: 5%;
+}
+.fotosOportunidades{
+    margin: 5% 5% 0% 5%;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);;
+}
+.divOportunidades{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/*SECCION 3*/
+/*BRONCO - Otros Modelos de Bronco*/
+.otrasBronco{
+    margin: 2% 5% 5% 43%;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+}
+.otrasBronco:hover{
+    transform: scale(3,2.8);
+}
+
+/*POSVENTA - Marquesin*/
+.marquesina{
+    background-color: rgb(211, 138, 3);
+    color: rgb(255, 255, 255);
+    padding: 2.813rem;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.textoMarquesina{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    margin: 5% 5% 0% 10%;
+    display: inline;
+}
+.iconosPosventa{
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconoMargin{
+    padding: 1rem;
+    font-size: 5.938rem;
+}
+
+/*SECCION 4*/
+/*HOME - SUCURSALES*/
+.divSucursales{
+    padding-top: 3rem;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+}
+.parrafoSucursal{
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: #2367C6;
+    padding: 1rem;
+}
+.botonSucursales{
+    border-radius: 2rem;
+    background-color: #122138;
+    color: #FFFFFF;
+}
+.textHeight{
+    margin-bottom: 25%;
+}
+/*SECCION 5*/
+/*HOME - CONTACTOS*/
+.fondoContactos{
+    background-color: #EFF0F0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+    height: 650px;
+}
+.margenContactos{
+    margin-left: 5%;
+    width: 50%;
+}
+
+.divIconos{
+    color: #2367C6;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    justify-content: center;        
+}
+.textoTitulosContactos{
+    font-size: 1rem;
+    color: #2367C6;
+    padding: 0.4rem;
+    margin-bottom: 0;
+}
+.contenidoContactos{
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.4rem;
+    text-align: center;             
+}
+
+/*FORMULARIO PARA SER CONTACTADO POR UN VENDEDOR*/
+.tituloFormulario{
+    font-size: 1.125rem;
+    color: #2367C6;
+    margin: 1.5rem;
+    text-align: center;
+}
+form{
+    color: #2367C6;
+    background-color: #e8e9ec;
+    width: 70%;                     
+    bottom: 20px;
+    padding: 1rem;
+    border-radius: 0.5rem; 
+    text-align: center;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+}
+
+form label{
+    display: inline-block;
+    width: 80%;
+    color: #2367C6;
+    text-align: left;
+    font-size: 0.875rem;
+}
+form input, textarea{
+    width: 80%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+    border: none;
+    border-bottom: solid 1px #2367C6;
+    color: #49596F;
+    font-family: Ford Antenna;
+}
+form textarea{
+    height: 5rem;
+    resize: none;
+}
+form input:focus, textarea:focus{
+    outline: none;
+}
+form input[type="submit"]{
+    margin: 1.5rem;
+    background-color: #2367C6;
+    padding: 0.4rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+form input[type="submit"]:hover{
+   background-color: #0B2D5E;
+}
+/*FOOTER*/
+footer{
+    background-color: #203556;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2.813rem;
+    /* text-align: center; */
+}
+footer p{
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    margin: 0.3rem;
+}
+.redes{
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0.938rem;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width:768px){
+    header{
+        height: 4rem;
+    }
+    .logo{
+        width: 6rem;
+        margin-left: 2.5rem;
+        margin-top: 1.2rem;
+    }
+    nav ul li{
+        display: inline-block;
+        font-size: 1rem;
+    }
+    ul ul{
+        display: none;
+        position: absolute;
+        width: 473%;
+        top: 2rem;
+    }
+    ul ul li{
+        display: block;
+        height: 25px;
+    }
+    .divServicios{
+        grid-template-columns: 16.875rem;
+        grid-template-rows: repeat(3, 8rem);
+        row-gap: 10rem;
+        height: 40rem;
+    }
+    .otrosModelos{
+        padding-top: 2rem;
+    }
+    .divSucursales{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+    }
+}    
+@media only screen and (max-width:480px){  
+    header{
+        height: 3rem;
+    }
+    .logo{
+        width: 4rem;
+        margin-left: 2.5rem;
+        margin-top: 1.2rem;
+    }
+    .altoCarousel{
+        height: 200px;
+    }
+    nav ul li{
+        display: inline-block;
+        font-size: 0.6rem;
+    }
+    ul ul{
+        display: none;
+        position: absolute;
+        width: 500%;
+        top: 1rem;
+    }
+    ul ul li{
+        display: block;
+        background-color: #203556;
+        height: 30px;
+        width: 120%;
+    }
+    ul li a{
+        padding: 0.438rem;
+    }
+    h1{
+        font-size: 1.5rem;
+        top: 7rem;
+        margin-left: 1.25rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .h2titulo{
+        color: #0B2D5E;
+        text-align: center;
+        letter-spacing: 0.4rem;
+        font-size: 1.5rem;
+        margin: 10% 0 2% 0;
+    }
+    .divServicios{
+        grid-template-columns: 16.875rem;
+        grid-template-rows: repeat(3, 8rem);
+        row-gap: 10rem;
+        height: 56rem;
+    }
+    .divSucursales{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+    }
+    .otrosModelos{
+        padding-left: 6rem;
+        padding-top: 2rem;
+        align-items: center;
+    }
+    form{
+        width: 80%;
+        position: relative;
+        bottom: 0.5rem;
+        left: 5%;
+        padding: 1.5rem 1rem;
+        margin-bottom: 10%;
+    }
+}

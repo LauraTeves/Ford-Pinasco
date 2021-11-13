@@ -1,0 +1,229 @@
+/*HEADER*/
+/*MENU*/
+header{
+    background-color: #203556;
+    height: 7rem;
+    box-shadow: 2px 7px 9px 3px rgba(73,89,111,0.6);
+    position: sticky;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    z-index: 1;
+}
+.logo{
+    width: 9rem;
+    margin-left: 2rem;
+    margin-bottom: 1.3rem;   
+}
+nav{
+    ul{
+        li{
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: $color-principal;
+            margin-left: 2rem;
+            a{
+                color: $color-principal;
+                text-decoration: none;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.507);
+                }
+            }
+         
+        } 
+    }
+}
+.linkActive{
+    background-color: rgba(254, 254, 255, 0.192);
+}
+/*SUBMENU*/
+.submenu{
+    position: relative;
+    z-index: 1;
+    color: $color-principal;
+    &__lista{
+    display: none;
+    position: absolute;
+    width: 590%;
+    &__items{
+    display: block;
+    background-color: #203556;
+    height: 40px;
+    }
+    }
+}
+ul{
+    li{
+        &:hover ul{
+            display: block;
+        }
+        a{
+            padding: 1rem;
+            
+        }
+    }
+}
+/*SECTION 1 - CARROUSEL*/
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    animation: rollIn;
+    animation-duration: 2s;
+}
+.altoCarousel{
+    height: 600px;
+}
+.linkCarrousel{
+    text-decoration: none;
+    color: $color-principal;
+    &:hover{
+        color: #878788;
+    }
+}
+/*SECTION 2 - SERVICIOS*/
+h2{
+    color: $color-secundario;
+    font-size: map-get($tamaño-fuentes, h2);
+    @extend %tituloSecciones;
+}
+h3{
+    color: $color-terciario;
+    font-size: map-get($tamaño-fuentes, h3);
+    @extend %titulosTerciarios;
+}
+.servicios{
+    background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(190,217,224,1) 52%, rgba(135,226,247,1) 100%);
+    padding: 3rem;
+    &__parrafo{
+    font-size: 0.875rem;
+    color: rgb(82, 82, 82);
+    padding-bottom: 1rem;
+    font-weight: medium;    
+    }
+}
+/*SECTION 3 - OTROS MODELOS*/
+.otrosModelos{
+    padding-top: 2rem;
+}
+.textHeight{
+    padding-bottom: 17%;
+}
+.tituloTarjeta{    
+    font-size: 1rem;
+    font-weight: bold;
+    color: #212529;
+}
+.parrafoTarjeta{    
+    font-size: 1rem;
+    font-weight: normal;
+    color: #212529;
+}
+.botonModelos{
+    border-radius: 2rem;
+    background-color: #122138;
+    color: #FFFFFF;
+}
+/*SECTION 4 - VER SUCURSALES*/
+.sucursales{
+    padding-top: 3rem;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+    &__parrafo{
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2367C6;
+    padding: 1rem;
+}
+}
+/*SECTION 5 - CONTACTOS*/
+.contacto__iconos{
+    color: #2367C6;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    justify-content: center;
+}
+.contacto__titulos{
+    font-size: map-get($tamaño-fuentes, h3);
+    font-weight: bold;
+    color: $color-terciario;
+    padding: 0.4rem;
+    margin-bottom: 0; 
+}
+.contacto__parrafo {
+    color: $color-parrafos;
+    font-size: map-get($tamaño-fuentes, parrafos);
+    padding: 0.4rem;
+    text-align: center;
+}
+/* FORMULARIO*/
+.tituloFormulario{
+    font-size: map-get($tamaño-fuentes, h3);
+    color: $color-terciario;
+    margin: 1.5rem;
+    text-align: center;
+}
+form{
+    color: $color-terciario;
+    background-color: #e8e9ec;
+    width: 70%;                     
+    bottom: 20px;
+    padding: 1rem;
+    border-radius: 0.5rem; 
+    text-align: center;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+    label{
+        display: inline-block;
+        width: 80%;
+        color: $color-terciario;
+        text-align: left;
+        font-size: 0.875rem;
+    }
+}
+form input, textarea{
+    width: 80%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: $color-principal;
+    border: none;
+    border-bottom: solid 1px $color-terciario;
+    color: $color-parrafos;
+}
+form textarea{
+    height: 5rem;
+    resize: none;
+}
+form input:focus, textarea:focus{
+    outline: none;
+}
+form input[type="submit"]{
+    margin: 1.5rem;
+    background-color: $color-terciario;
+    padding: 0.4rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    color: $color-principal;
+}
+form input[type="submit"]:hover{
+   background-color: $color-secundario;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: $color-secundario;
+    padding: 2.813rem;
+    text-align: center;
+    &__texto{
+    color: $color-principal;
+    font-size: 0.8rem;
+    margin: 0.3rem;
+    }
+}
+.redes{
+    text-align: center;
+    color: $color-principal;
+    padding: 0.938rem;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,21 @@
+/*EXTEND*/
+%tituloSecciones{
+    text-align: center;
+    letter-spacing: 0.4rem;
+    font-size: 1.875rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+%titulosTerciarios{
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+/*MIXIN*/
+@mixin flexbox ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: nowrap;    
+}
