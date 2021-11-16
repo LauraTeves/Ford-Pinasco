@@ -66,7 +66,7 @@ ul{
 }
 /*SECTION 1 - CARROUSEL*/
 h1{
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: 4rem;
     animation: rollIn;
     animation-duration: 2s;
@@ -82,7 +82,7 @@ h1{
     }
 }
 .colorParrafo{
-    color: $color-principal;
+    color:$color-principal;
 }
 /*SECTION 2 - SERVICIOS*/
 h2{

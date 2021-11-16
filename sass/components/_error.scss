@@ -4,8 +4,8 @@
     font-size: map-get($tamaño-fuentes, h1);
     text-align: center;
 }
-p{
-    color: $color-parrafos;
+.textoError{
+    color: $color-principal;
     font-size: map-get($tamaño-fuentes, h1);
     text-align: center;
 }
