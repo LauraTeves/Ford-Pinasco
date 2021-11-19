@@ -81,6 +81,9 @@ h1 {
   .linkCarrousel:hover {
     color: #878788; }
 
+.colorParrafo {
+  color: #FFFFFF; }
+
 /*SECTION 2 - SERVICIOS*/
 h2 {
   color: #0B2D5E;
@@ -148,7 +151,7 @@ h3 {
   margin-bottom: 0; }
 
 .contacto__parrafo {
-  color: #49596F;
+  color: #49596f;
   font-size: 1rem;
   padding: 0.4rem;
   text-align: center; }
@@ -183,7 +186,7 @@ form input, textarea {
   background-color: #FFFFFF;
   border: none;
   border-bottom: solid 1px #2367C6;
-  color: #49596F; }
+  color: #49596f; }
 
 form textarea {
   height: 5rem;
@@ -220,13 +223,104 @@ form input[type="submit"]:hover {
   padding: 0.938rem;
   font-size: 1.5rem; }
 
+/*HEADER*/
+/*MENU*/
+header {
+  background-color: #203556;
+  height: 7rem;
+  box-shadow: 2px 7px 9px 3px rgba(73, 89, 111, 0.6);
+  position: sticky;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 1; }
+
+.logo {
+  width: 9rem;
+  margin-left: 2rem;
+  margin-bottom: 1.3rem; }
+
+nav ul li {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #FFFFFF;
+  margin-left: 2rem; }
+  nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none; }
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.507); }
+
+.linkActive {
+  background-color: rgba(254, 254, 255, 0.192); }
+
+/*SUBMENU*/
+.submenu {
+  position: relative;
+  z-index: 1;
+  color: #FFFFFF; }
+  .submenu__lista {
+    display: none;
+    position: absolute;
+    width: 590%; }
+    .submenu__lista__items {
+      display: block;
+      background-color: #203556;
+      height: 40px; }
+
+ul li:hover ul {
+  display: block; }
+
+ul li a {
+  padding: 1rem; }
+
+/*SECCTION 1*/
+.parrafoNosotros {
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  color: #49596f;
+  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68);
+  text-align: justify;
+  margin: 1.25rem;
+  padding: 2rem; }
+
+.listaValores {
+  text-align: center;
+  list-style: none;
+  margin: 1.25rem;
+  margin-bottom: 10%;
+  padding: 2rem;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #49596f;
+  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
+
+/*FOOTER*/
+.footer {
+  background-color: #0B2D5E;
+  padding: 2.813rem;
+  text-align: center; }
+  .footer__texto {
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    margin: 0.3rem; }
+
+.redes {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0.938rem;
+  font-size: 1.5rem; }
+
 .tituloError {
   color: #0B2D5E;
   font-size: 1.5rem;
   text-align: center; }
 
 p {
-  color: #49596F;
+  color: #49596f;
   font-size: 1.5rem;
   text-align: center; }
 
