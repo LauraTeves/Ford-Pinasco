@@ -1,0 +1,30 @@
+[33mcommit a0cc1c8d754d26505427e7ad8928518e20030aac[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 37c7328 4fa3f4d
+Author: laura teves <teves.laura@gmail.com>
+Date:   Thu Nov 18 22:28:15 2021 -0300
+
+    Merge branch 'actualizaciones'
+
+[33mcommit 4fa3f4d52f43f66867ec4430a568a82c46b34281[m[33m ([m[1;32mactualizaciones[m[33m)[m
+Author: laura teves <teves.laura@gmail.com>
+Date:   Thu Nov 18 20:22:51 2021 -0300
+
+    actualizacion
+
+[33mcommit 37c732852b6e92ec24b714a3d849eb4ef2fb5e8a[m
+Author: laura teves <teves.laura@gmail.com>
+Date:   Mon Nov 15 22:37:43 2021 -0300
+
+    se modifica color de texto con una clase en etiqueta parrafo de html Error404 en subtitulo de carrusel a color-principal
+
+[33mcommit 9b8ad103cf8069395becf4464b4de850584e1cb7[m
+Author: laura teves <teves.laura@gmail.com>
+Date:   Sat Nov 13 16:52:46 2021 -0300
+
+    cambio de color a blanco de subtitulo de carrusel
+
+[33mcommit ce4c8f6f793ed5a6e0d07e6aa066b5cef31a3b34[m
+Author: laura teves <teves.laura@gmail.com>
+Date:   Sat Nov 13 16:18:50 2021 -0300
+
+    COMMIT INICIAL
