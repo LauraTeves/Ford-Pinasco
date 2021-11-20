@@ -297,14 +297,14 @@ div button {
 /*SECTION 3 - BANNER*/
 .banner {
   background-color: #d38a03;
-  color: white;
+  color: #FFFFFF;
   padding: 2.813rem;
   text-align: center;
   height: 15.625rem;
   margin-bottom: 10%; }
 
 .textoBanner {
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   font-size: 2rem;
   letter-spacing: 0.2rem;
@@ -319,6 +319,22 @@ div button {
 .alineacion {
   padding: 1rem;
   font-size: 5.8rem; }
+
+/*SECCTION 1*/
+.parrafosPosventa {
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+  color: #858288;
+  text-align: left;
+  width: 37.5rem; }
+
+.imagenesPosventa {
+  display: flex;
+  margin: 3rem;
+  padding: 5% 0% 5% 0%;
+  justify-content: space-around;
+  align-items: flex-start;
+  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
 
 /*SECCTION 1*/
 .parrafoNosotros {
@@ -342,22 +358,6 @@ div button {
   font-weight: bold;
   color: #49596f;
   box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
-
-/*FOOTER*/
-.footer {
-  background-color: #0B2D5E;
-  padding: 2.813rem;
-  text-align: center; }
-  .footer__texto {
-    color: #FFFFFF;
-    font-size: 0.8rem;
-    margin: 0.3rem; }
-
-.redes {
-  text-align: center;
-  color: #FFFFFF;
-  padding: 0.938rem;
-  font-size: 1.5rem; }
 
 .tituloError {
   color: #0B2D5E;

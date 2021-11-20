@@ -28,15 +28,15 @@
 }
 /*SECTION 3 - BANNER*/
 .banner{
-    background-color: rgb(211, 138, 3);
-    color: rgb(255, 255, 255);
+    background-color: #d38a03;
+    color: $color-principal;
     padding: 2.813rem;
     text-align: center;
     height: 15.625rem;
     margin-bottom: 10%;
 }
 .textoBanner{
-    color: rgb(255, 255, 255);
+    color: $color-principal;
     text-align: center;
     font-size: 2rem;
     letter-spacing: 0.2rem;
