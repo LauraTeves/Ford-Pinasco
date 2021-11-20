@@ -27,7 +27,7 @@ header {
 
 .logo {
   width: 9rem;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
   margin-bottom: 1.3rem; }
 
 nav ul li {
@@ -57,13 +57,13 @@ nav ul li {
     .submenu__lista__items {
       display: block;
       background-color: #203556;
-      height: 40px; }
+      height: 2.5rem; }
 
 ul li:hover ul {
   display: block; }
 
 ul li a {
-  padding: 1rem; }
+  padding: 0.8rem; }
 
 /*SECTION 1 - CARROUSEL*/
 h1 {
