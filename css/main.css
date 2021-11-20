@@ -359,6 +359,60 @@ div button {
   color: #49596f;
   box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
 
+/*SECCTION 2 - CARACTERISTICAS*/
+.parrafosBronco {
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  color: #49596f;
+  text-align: justify;
+  margin: 1.25rem;
+  padding: 1.563rem;
+  width: 37.5rem;
+  height: 18.75rem; }
+
+.imagenExterior {
+  display: flex;
+  text-align: center;
+  margin: 2rem;
+  padding: 5% 5% 0% 5%;
+  justify-content: space-around;
+  align-items: flex-start;
+  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68);
+  background: linear-gradient(-90deg, #fefeff 0%, #bed9e0 52%, #a4d3de 100%); }
+
+.imagenInterior {
+  display: flex;
+  text-align: center;
+  margin: 2rem;
+  padding: 4rem;
+  justify-content: space-around;
+  align-items: flex-start;
+  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68);
+  background: linear-gradient(90deg, #fefeff 0%, #bed9e0 52%, #a4d3de 100%); }
+
+table {
+  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68);
+  color: #49596f;
+  width: 70%;
+  margin: 5% 5% 10% 15%; }
+  table th {
+    color: #0B2D5E;
+    font-size: 1.125rem;
+    padding: 0.625rem; }
+  table td {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.938rem; }
+
+/*SECCTION 3 - OTROS MODELOS DE BRINCO*/
+.otrasBronco {
+  margin: 2% 5% 5% 43%;
+  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
+
+.otrasBronco:hover {
+  transform: scale(1.2, 1.2); }
+
 .tituloError {
   color: #0B2D5E;
   font-size: 1.5rem;
