@@ -1,0 +1,55 @@
+/*SECCTION 1 - PORTADA*/
+.portada{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.h1Usados{
+    color: $color-secundario;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    display: flex;
+    bottom: 4rem;
+    margin-left: 2.5rem;
+    animation: rollIn;
+    animation-duration: 2s;
+}
+/*SECCTION 2 - GALERIA*/
+.fotosOportunidades{
+    margin: 5% 5% 0% 5%;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+}
+.divOportunidades{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+/*SECTION 3 - BANNER*/
+.banner{
+    background-color: #d38a03;
+    color: $color-principal;
+    padding: 2.813rem;
+    text-align: center;
+    height: 15.625rem;
+    margin-bottom: 10%;
+}
+.textoBanner{
+    color: $color-principal;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    margin: 5% 5% 0% 10%;
+    display: inline;
+}
+.iconosPosventa{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.alineacion{
+    padding: 1rem;
+    font-size: 5.8rem;
+}

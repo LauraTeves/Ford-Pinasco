@@ -1,0 +1,56 @@
+/*SECCTION 2 - CARACTERISTICAS*/
+.parrafosBronco{
+    font-size: map-get($tamaño-fuentes, parrafo-img);
+    font-style: italic;
+    line-height: 1.5rem;
+    color: $color-parrafos;
+    text-align: justify;
+    margin: 1.25rem;
+    padding: 1.563rem;
+    width: 37.5rem;
+    height: 18.75rem;
+}
+.imagenExterior{
+    display: flex;
+    text-align: center;
+    margin:2rem;
+    padding: 5% 5% 0% 5%;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+    background: linear-gradient(-90deg, rgba(254,254,255,1) 0%, rgba(190,217,224,1) 52%, rgba(164,211,222,1) 100%);
+}
+.imagenInterior{
+    display: flex;
+    text-align: center;
+    margin:2rem;
+    padding: 4rem;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+    background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(190,217,224,1) 52%, rgba(164,211,222,1) 100%);
+}
+table{
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);;
+    color:$color-parrafos;
+    width: 70%;
+    margin: 5% 5% 10% 15%;
+    th{
+        color: $color-secundario;
+        font-size: 1.125rem;
+        padding: 0.625rem;}
+    td{
+        font-weight: bold;
+        font-size: map-get($tamaño-fuentes, parrafos);
+        padding: 0.938rem;
+
+    }
+}
+/*SECCTION 3 - OTROS MODELOS DE BRINCO*/
+.otrasBronco{
+    margin: 2% 5% 5% 43%;
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
+}
+.otrasBronco:hover{
+    transform: scale(1.2,1.2);
+} 

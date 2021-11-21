@@ -1,0 +1,45 @@
+/*SECTION 1*/
+.imagenesOkm{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+div button{
+    background-color: $color-botones;
+    border: 0.063rem solid $color-botones;
+    padding: 0.625rem;
+    margin-left: 1.875rem;
+    a{
+        color: $color-principal;
+        text-decoration: none;
+    }
+}
+.parrafo0km{
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: map-get($tamaño-fuentes, h1);
+    color: $color-terciario;
+    width: 25rem;
+    font-weight: bold;
+    margin: 4%;
+}
+.financiacion{
+    background-color: $color-terciario;
+    height: 100px;
+    margin-bottom: 5rem;
+}
+.textoFinanciacion{
+    color: $color-principal;
+    text-align: center;
+    padding-top: 2.5rem;
+    font-size: map-get($tamaño-fuentes, h3);
+    @extend %titulosTerciarios;
+}
+.imagenMustang{
+    margin-left: 2rem;
+}
+.textoMustang{
+    color: $color-parrafos;
+    font-size: 1rem;
+    font-weight: bold;
+}
