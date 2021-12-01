@@ -8,27 +8,4 @@
 .accordion{
     width: 75%;
     margin: 4rem auto;
-    box-shadow: unquote('3px 3px 5px 0px rgb(0 0 0 / 20%)');
-
-    @media only screen and (max-width: 576px), only screen and (max-width: 992px){
-        width: 100%;
-        margin: 2rem auto;
-    }
-}
-.accordion-item {
-    background-color: #f5f1f2;
-}
-.accordion-button{
-    &:not(.collapsed){
-        color: #f5f1f2;
-        font-weight: bold;
-        background-color: $color-violet;
-    }
-
-    &:focus{
-        z-index: 3;
-        border-color: #53686e;
-        outline: 0;
-        box-shadow: unquote('0 0 0 0.15rem rgb(39 54 59)');
-    }
 }
