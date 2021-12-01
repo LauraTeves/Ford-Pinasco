@@ -13,6 +13,14 @@ h3, .textoFinanciacion {
   padding-top: 1rem; }
 
 /*MIXIN*/
+/*GENERAL SETTINGS*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Ford Antenna', Open sans-serif; }
+
 /*SECTION 1 - CARROUSEL*/
 .logo {
   width: 9rem;
@@ -300,27 +308,14 @@ div button {
   box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
 
 /*SECCTION 1*/
-.parrafoNosotros {
-  font-size: 1rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  color: #49596f;
-  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68);
-  text-align: justify;
-  margin: 1.25rem;
-  padding: 2rem; }
+.portada {
+  display: flex;
+  position: relative;
+  justify-content: center; }
 
-.listaValores {
-  text-align: center;
-  list-style: none;
-  margin: 1.25rem;
-  margin-bottom: 10%;
-  padding: 2rem;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: bold;
-  color: #49596f;
-  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
+.accordion {
+  width: 75%;
+  margin: 4rem auto; }
 
 /*SECCTION 2 - CARACTERISTICAS*/
 .parrafosBronco {
