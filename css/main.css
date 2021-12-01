@@ -13,62 +13,24 @@ h3, .textoFinanciacion {
   padding-top: 1rem; }
 
 /*MIXIN*/
-/*HEADER*/
-/*MENU*/
-header {
-  background-color: #203556;
-  height: 7rem;
-  box-shadow: 2px 7px 9px 3px rgba(73, 89, 111, 0.6);
-  position: sticky;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  z-index: 1; }
-
+/*SECTION 1 - CARROUSEL*/
 .logo {
   width: 9rem;
   margin-left: 2.5rem;
   margin-bottom: 1.3rem; }
 
-nav ul li {
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: #FFFFFF;
-  margin-left: 2rem; }
-  nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none; }
-    nav ul li a:hover {
-      background-color: rgba(255, 255, 255, 0.507); }
-
-.linkActive {
-  background-color: rgba(254, 254, 255, 0.192); }
-
-/*SUBMENU*/
-.submenu {
-  position: relative;
-  z-index: 1;
-  color: #FFFFFF; }
-  .submenu__lista {
-    display: none;
-    position: absolute;
-    width: 590%; }
-    .submenu__lista__items {
-      display: block;
-      background-color: #203556;
-      height: 2.5rem; }
-
-ul li:hover ul {
-  display: block; }
-
-ul li a {
-  padding: 0.8rem; }
-
-/*SECTION 1 - CARROUSEL*/
 h1 {
+  color: #FFFFFF;
+  font-size: 4rem;
+  animation: rollIn;
+  animation-duration: 2s; }
+
+.carousel-caption a {
+  display: block;
+  z-index: 1000;
   color: #ffffff;
   font-size: 4rem;
+  font-weight: 600;
   animation: rollIn;
   animation-duration: 2s; }
 
@@ -82,7 +44,8 @@ h1 {
     color: #878788; }
 
 .colorParrafo {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-size: 1.5rem; }
 
 /*SECTION 2 - SERVICIOS*/
 h2 {

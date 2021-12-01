@@ -1,73 +1,31 @@
-/*HEADER*/
-/*MENU*/
-header{
-    background-color: #203556;
-    height: 7rem;
-    box-shadow: 2px 7px 9px 3px rgba(73,89,111,0.6);
-    position: sticky;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    z-index: 1;
+/*GENERAL SETTINGS*/
+*{
+    margin: 0;
+    padding: 0;
 }
+body{
+    font-family: 'Ford Antenna', Open sans-serif;
+}
+
+/*SECTION 1 - CARROUSEL*/
 .logo{
     width: 9rem;
     margin-left: 2.5rem;
-    margin-bottom: 1.3rem;   
+    margin-bottom: 1.3rem;
 }
-nav{
-    ul{
-        li{
-            display: inline-block;
-            font-size: 1.2rem;
-            font-weight: normal;
-            color: $color-principal;
-            margin-left: 2rem;
-            a{
-                color: $color-principal;
-                text-decoration: none;
-                &:hover{
-                    background-color: rgba(255, 255, 255, 0.507);
-                }
-            }
-         
-        } 
-    }
-}
-.linkActive{
-    background-color: rgba(254, 254, 255, 0.192);
-}
-/*SUBMENU*/
-.submenu{
-    position: relative;
-    z-index: 1;
-    color: $color-principal;
-    &__lista{
-    display: none;
-    position: absolute;
-    width: 590%;
-    &__items{
-    display: block;
-    background-color: #203556;
-    height: 2.5rem;
-    }
-    }
-}
-ul{
-    li{
-        &:hover ul{
-            display: block;
-        }
-        a{
-            padding: 0.8rem;
-            
-        }
-    }
-}
-/*SECTION 1 - CARROUSEL*/
 h1{
+    color: $color-principal;
+    font-size: 4rem;
+    animation: rollIn;
+    animation-duration: 2s;
+}
+
+.carousel-caption a{
+    display: block;
+    z-index: 1000;
     color: #ffffff;
     font-size: 4rem;
+    font-weight: 600;
     animation: rollIn;
     animation-duration: 2s;
 }
@@ -83,6 +41,7 @@ h1{
 }
 .colorParrafo{
     color:$color-principal;
+    font-size: map-get($tamaño-fuentes, h1);
 }
 /*SECTION 2 - SERVICIOS*/
 h2{

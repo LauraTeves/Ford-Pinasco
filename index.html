@@ -26,23 +26,35 @@
     <title>Ford Pinasco | SOMOS RAZA FUERTE</title>
 </head>
 <body>
-    <header>
-        <img class="logo" src="./fotos/Logo Pinasco blanco-02.png" alt="logo Ford Pinasco">
-        <nav>
-            <ul>
-                <li><a class=".linkActive" href="index.html">Inicio</a></li>
-                    <li class="submenu menu">O KM<i></i>
-                        <ul class="submenu__lista">
-                        <li class="submenu__lista__items"><a href="#">Autos</a></li>
-                        <li class="submenu__lista__items"><a href="0km.html">Pick-Ups y SUVs</a></li>
-                        <li class="submenu__lista__items"><a href="#">Camiones y Utilitarios</a></li>
+    <header>        
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #0B2D5E">
+            <div class="container-fluid">
+              <img src="./fotos/Logo Pinasco blanco-02.png" class="logo" alt="Logo Ford Pinasco"><a class="navbar-brand" href="index.html"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">0KM</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="0km.html">Pick-Ups y SUVs</a></li>
+                            <li><a class="dropdown-item" href="#">Autos</a></li>
+                            <li><a class="dropdown-item" href="#">Camiones y Utilitarios</a></li>
                         </ul>
-                    </li>
-                <li><a href="usados.html">Usados</a></li>
-                <li><a href="posventa.html">Posventa</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
+                  <li class="nav-item">
+                    <a class="nav-link" href="posventa.html">POSVENTA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
     <!--SECTION 1 - CARROUSEL-->
@@ -55,9 +67,9 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./fotos/bronco-comprimida.jpg" class="d-block w-100 altoCarousel" alt="Nuevab RONCO">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h1><a href="./bronco.html" class="linkCarrousel">Descubrí la nueva BRONCO</a></h1>
+                    <img src="./fotos/bronco-comprimida.jpg" class="d-block w-100 altoCarousel" alt="Nueva RONCO">
+                    <div class="carousel-caption d-md-block">
+                      <a href="./bronco.html" class="linkCarrousel">Descubrí la nueva BRONCO</a>
                       <p class="colorParrafo">Consultá todos nuestros planes de financiación.</p>
                     </div>
                   </div>
