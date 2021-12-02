@@ -23,9 +23,7 @@ body {
 
 /*SECTION 1 - CARROUSEL*/
 .logo {
-  width: 9rem;
-  margin-left: 2.5rem;
-  margin-bottom: 1.3rem; }
+  width: 9rem; }
 
 h1 {
   color: #FFFFFF;
@@ -43,7 +41,8 @@ h1 {
   animation-duration: 2s; }
 
 .altoCarousel {
-  height: 600px; }
+  height: 45rem;
+  margin-top: 4rem; }
 
 .linkCarrousel {
   text-decoration: none;
@@ -69,30 +68,30 @@ h3 {
   padding: 3rem; }
   .servicios__parrafo {
     font-size: 0.875rem;
-    color: #525252;
+    color: #49596f;
     padding-bottom: 1rem;
     font-weight: medium; }
 
 /*SECTION 3 - OTROS MODELOS*/
-.otrosModelos {
+.otros__modelos {
   padding-top: 2rem; }
 
-.textHeight {
+.text__height {
   padding-bottom: 17%; }
 
-.tituloTarjeta {
+.titulo__tarjeta {
   font-size: 1rem;
   font-weight: bold;
-  color: #212529; }
+  color: #0A121F; }
 
-.parrafoTarjeta {
+.parrafo__tarjeta {
   font-size: 1rem;
   font-weight: normal;
-  color: #212529; }
+  color: #49596f; }
 
-.botonModelos {
+.boton__modelos {
   border-radius: 2rem;
-  background-color: #122138;
+  background-color: #0A121F;
   color: #FFFFFF; }
 
 /*SECTION 4 - VER SUCURSALES*/
@@ -128,7 +127,7 @@ h3 {
   text-align: center; }
 
 /* FORMULARIO*/
-.tituloFormulario {
+.titulo__formulario {
   font-size: 1.125rem;
   color: #2367C6;
   margin: 1.5rem;
@@ -138,7 +137,7 @@ form {
   color: #2367C6;
   background-color: #e8e9ec;
   width: 70%;
-  bottom: 20px;
+  bottom: 1.25rem;
   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -308,14 +307,29 @@ div button {
   box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
 
 /*SECCTION 1*/
-.portada {
+.portadaNs {
   display: flex;
   position: relative;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 4rem; }
 
 .accordion {
   width: 75%;
   margin: 4rem auto; }
+
+.accordion-button {
+  margin: 2rem auto;
+  background-color: #FFFFFF;
+  color: #0B2D5E; }
+  .accordion-button:not(.collapsed) {
+    background-color: #0B2D5E;
+    color: #FFFFFF; }
+
+.accordion-item {
+  border: none; }
+
+.accordion-header {
+  margin: 0.5rem; }
 
 /*SECCTION 2 - CARACTERISTICAS*/
 .parrafosBronco {
