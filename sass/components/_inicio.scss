@@ -27,7 +27,7 @@ h1{
     animation-duration: 2s;
 }
 .altoCarousel{
-    height: 45rem;
+    height: 50rem;
     margin-top: 4rem;
 }
 .linkCarrousel{
@@ -65,9 +65,10 @@ h3{
 /*SECTION 3 - OTROS MODELOS*/
 .otros__modelos{
     padding-top: 2rem;
+    padding-left: 4rem;
 }
 .text__height{
-    padding-bottom: 17%;
+    padding-bottom: 20%;
 }
 .titulo__tarjeta{    
     font-size: 1rem;
@@ -82,7 +83,7 @@ h3{
 .boton__modelos{
     border-radius: 2rem;
     background-color: $color-botones;
-    color: #FFFFFF;
+    color:$color-principal;
 }
 /*SECTION 4 - VER SUCURSALES*/
 .sucursales{
@@ -196,6 +197,9 @@ form input[type="submit"]:hover{
             color:$color-principal;
         }
     }
+    .otros__modelos{
+        padding-left: 1.2rem;
+    }
 
 }
 @media only screen and (max-width:480px){
@@ -205,6 +209,7 @@ form input[type="submit"]:hover{
     .altoCarousel{
         height: 12rem;
         margin-top: 3.4rem;
+        width: 80%;
     }
     h1{
         font-size: 1.5rem;
@@ -230,8 +235,8 @@ form input[type="submit"]:hover{
         font-size: 1.5rem;
     }
     .otros__modelos{
-        padding-left: 2.1rem;
-    }
+        padding-left: 2.2rem;
+    }    
     form{
         width: 95%;
     }
