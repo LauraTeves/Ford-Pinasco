@@ -3,7 +3,7 @@
 /*EXTEND*/
 h2 {
   text-align: center;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
   font-size: 1.875rem;
   margin-top: 5rem;
   margin-bottom: 2rem; }
@@ -50,7 +50,7 @@ h1 {
   .linkCarrousel:hover {
     color: #878788; }
 
-.colorParrafo {
+.parrafo__carousel {
   color: #FFFFFF;
   font-size: 1.5rem; }
 
@@ -192,6 +192,38 @@ form input[type="submit"]:hover {
   color: #FFFFFF;
   padding: 0.938rem;
   font-size: 1.5rem; }
+
+@media only screen and (max-width: 768px) {
+  .altoCarousel {
+    height: 25rem; }
+  .linkCarrousel:hover {
+    color: #FFFFFF; } }
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 4.5rem; }
+  .altoCarousel {
+    height: 12rem;
+    margin-top: 3.4rem; }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 400; }
+  .carousel-caption a {
+    z-index: 1000;
+    font-size: 1.5rem;
+    font-weight: 400; }
+  .parrafo__carousel {
+    font-size: 0.8rem; }
+  .linkCarrousel:hover {
+    color: #FFFFFF; }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1rem; }
+  h2 {
+    font-size: 1.5rem; }
+  .otros__modelos {
+    padding-left: 2.1rem; }
+  form {
+    width: 95%; } }
 
 /*SECTION 1*/
 .imagenesOkm {
