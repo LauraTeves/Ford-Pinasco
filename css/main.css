@@ -52,6 +52,10 @@ h1 {
   .linkCarrousel:hover {
     color: #878788; }
 
+.noCarrousel {
+  text-decoration: none;
+  color: #FFFFFF; }
+
 .parrafo__carousel {
   color: #FFFFFF;
   font-size: 1.5rem; }

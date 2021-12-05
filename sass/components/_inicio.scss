@@ -37,6 +37,10 @@ h1{
         color: #878788;
     }
 }
+.noCarrousel{
+    text-decoration: none;
+    color: $color-principal;
+}
 .parrafo__carousel{
     color:$color-principal;
     font-size: map-get($tamaño-fuentes, h1);
