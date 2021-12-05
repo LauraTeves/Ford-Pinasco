@@ -1,35 +1,25 @@
 /*SECCTION 2 - CARACTERISTICAS*/
+#myVideo{
+    margin-top: 3rem;
+}
 .parrafosBronco{
-    font-size: map-get($tamaño-fuentes, parrafo-img);
-    font-style: italic;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.4rem;
     color: $color-parrafos;
-    text-align: justify;
-    margin: 1.25rem;
-    padding: 1.563rem;
-    width: 37.5rem;
-    height: 18.75rem;
+    text-align: left;
+    width: 60rem; 
 }
-.imagenExterior{
+.imagenesBronco{
     display: flex;
-    text-align: center;
-    margin:2rem;
-    padding: 5% 5% 0% 5%;
+    margin: 8rem 3rem 2rem 3rem;    
+    padding: 5% 0% 5% 0%;
     justify-content: space-around;
+    flex-flow: row wrap;
     align-items: flex-start;
-    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
     background: linear-gradient(-90deg, rgba(254,254,255,1) 0%, rgba(190,217,224,1) 52%, rgba(164,211,222,1) 100%);
+    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68)
 }
-.imagenInterior{
-    display: flex;
-    text-align: center;
-    margin:2rem;
-    padding: 4rem;
-    justify-content: space-around;
-    align-items: flex-start;
-    box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
-    background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(190,217,224,1) 52%, rgba(164,211,222,1) 100%);
-}
+/*TABLA CON FICHA TÉCNICA DE BRONCO*/
 table{
     box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);;
     color:$color-parrafos;
@@ -43,14 +33,50 @@ table{
         font-weight: bold;
         font-size: map-get($tamaño-fuentes, parrafos);
         padding: 0.938rem;
-
     }
 }
-/*SECCTION 3 - OTROS MODELOS DE BRINCO*/
-.otrasBronco{
+/*SECCTION 3 - MÁS OPCIONES*/
+.opciones{
     margin: 2% 5% 5% 43%;
     box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
 }
-.otrasBronco:hover{
+.opciones:hover{
     transform: scale(1.2,1.2);
-} 
+}
+@media only screen and (max-width:768px){
+    #myVideo{
+        margin-top: 4rem;
+    }
+    .tituloBronco{
+        text-align: center;
+    }
+    .parrafosBronco{
+        line-height: 1.5rem;
+        width: 35rem;
+        margin-left: 2.3rem;
+    }
+    .opciones{
+        margin: 2% 5% 5% 38%;
+    }
+}
+@media only screen and (max-width:480px){
+    #myVideo{
+        margin-top: 3rem;
+    }
+    .imagenesBronco{
+        margin: 4rem 1rem 2rem 1rem;
+    }
+    .tituloBronco{
+        text-align: center;
+    }
+    .parrafosBronco{
+        text-align: justify;
+        padding-right: 1.8rem;
+    }
+    .opciones{
+        margin: 2% 5% 5% 25%;
+    }
+}
+
+
+

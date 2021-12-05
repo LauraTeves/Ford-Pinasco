@@ -1,39 +1,36 @@
 /*SECTION 1*/
-.imagenesOkm{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+.titulo{
+    margin-top: 10rem;
 }
-div button{
+.boton{
     background-color: $color-botones;
-    border: 0.063rem solid $color-botones;
     padding: 0.625rem;
-    margin-left: 1.875rem;
-    a{
-        color: $color-principal;
-        text-decoration: none;
-    }
+    margin: 2rem auto;
+    width: 15rem;
 }
-.parrafo0km{
-    text-align: center;
-    letter-spacing: 0.2rem;
-    font-size: map-get($tamaño-fuentes, h1);
-    color: $color-terciario;
-    width: 25rem;
-    font-weight: bold;
-    margin: 4%;
+.textoBoton{
+    color: $color-principal;
+    text-decoration: none;
+    &:hover{
+        color: #c2c2ce;
+    }
 }
 .financiacion{
     background-color: $color-terciario;
-    height: 100px;
-    margin-bottom: 5rem;
+    height: 8rem;
+    margin: 5rem auto;
 }
 .textoFinanciacion{
     color: $color-principal;
     text-align: center;
-    padding-top: 2.5rem;
+    padding: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.tituloLanzamiento{
+    color: $color-terciario;
     font-size: map-get($tamaño-fuentes, h3);
-    @extend %titulosTerciarios;
+    margin-left: 2rem;
 }
 .imagenMustang{
     margin-left: 2rem;
@@ -42,4 +39,40 @@ div button{
     color: $color-parrafos;
     font-size: 1rem;
     font-weight: bold;
+    margin-left: 2rem;
+}
+@media only screen and (max-width:768px){
+    .titulo{
+        margin-top: 8rem;
+    }
+    .financiacion{
+        background-color: $color-terciario;
+        height: 100px;
+        margin-bottom: 5rem;
+    }
+    .textoFinanciacion{
+        padding-top: 2.5rem;
+        font-size: map-get($tamaño-fuentes, h3);
+    }
+    .imagenMustang{
+        margin-left: 2rem;
+    }
+    .textoMustang{
+        color: $color-parrafos;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+}
+@media only screen and (max-width:480px){
+    .logo{
+        width: 4.5rem;
+    }
+    .titulo{
+        margin-top: 6rem;
+    }
+    .textoFinanciacion{
+        padding-top: 0.8rem;
+        
+    }
 }

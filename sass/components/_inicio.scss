@@ -6,17 +6,17 @@
 body{
     font-family: 'Ford Antenna', Open sans-serif;
 }
-/*SECTION 1 - CARROUSEL*/
+/*NAV*/
 .logo{
     width: 9rem;
 }
+/*SECTION 1 - CARROUSEL*/
 h1{
     color: $color-principal;
     font-size: 4rem;
     animation: rollIn;
     animation-duration: 2s;
 }
-
 .carousel-caption a{
     display: block;
     z-index: 1000;
@@ -63,27 +63,28 @@ h3{
     }
 }
 /*SECTION 3 - OTROS MODELOS*/
-.otros__modelos{
+.otrosModelos{
     padding-top: 2rem;
     padding-left: 4rem;
 }
-.text__height{
+.textHeight{
     padding-bottom: 20%;
 }
-.titulo__tarjeta{    
+.tituloTarjeta{    
     font-size: 1rem;
     font-weight: bold;
     color: $color-botones;
 }
-.parrafo__tarjeta{    
+.parrafoTarjeta{    
     font-size: 1rem;
     font-weight: normal;
     color: $color-parrafos;
 }
-.boton__modelos{
+.botonModelos{
     border-radius: 2rem;
     background-color: $color-botones;
     color:$color-principal;
+    padding: 0.8rem;
 }
 /*SECTION 4 - VER SUCURSALES*/
 .sucursales{
@@ -99,7 +100,7 @@ h3{
 }
 /*SECTION 5 - CONTACTOS*/
 .contacto__iconos{
-    color: #2367C6;
+    color: $color-terciario;
     display: flex;
     align-items: center;
     margin: 0.5rem 0;
@@ -170,7 +171,6 @@ form input[type="submit"]{
 form input[type="submit"]:hover{
    background-color: $color-secundario;
 }
-
 /*FOOTER*/
 .footer{
     background-color: $color-secundario;
@@ -197,10 +197,9 @@ form input[type="submit"]:hover{
             color:$color-principal;
         }
     }
-    .otros__modelos{
+    .otrosModelos{
         padding-left: 1.2rem;
     }
-
 }
 @media only screen and (max-width:480px){
     .logo{
@@ -234,7 +233,7 @@ form input[type="submit"]:hover{
     h2{
         font-size: 1.5rem;
     }
-    .otros__modelos{
+    .otrosModelos{
         padding-left: 2.2rem;
     }    
     form{

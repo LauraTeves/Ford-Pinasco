@@ -1,12 +1,11 @@
-/*SECCTION 1*/
-.portadaNs{
+/*SECCTION 1 PORTADA*/
+.portadaNosotros{
     display: flex;
     position: relative;
     justify-content: center;
-    margin-top: 4rem;
-           
+    margin-top: 4rem;      
 }
-
+/*ACCORDION*/
 .accordion{
     width: 75%;
     margin: 4rem auto;
@@ -25,4 +24,13 @@
 }
 .accordion-header{
     margin: 0.5rem;
+}
+.interlineado{
+    padding: 0;
+    margin-left: 1rem;
+}
+@media only screen and (max-width:480px){
+.portadaNosotros{
+    margin-top: 3rem;
+    }    
 }

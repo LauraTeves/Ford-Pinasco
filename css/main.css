@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*VARIABLES*/
 /*MAPAS*/
 /*EXTEND*/
@@ -8,7 +9,7 @@ h2 {
   margin-top: 5rem;
   margin-bottom: 2rem; }
 
-h3, .textoFinanciacion {
+h3 {
   font-weight: bold;
   padding-top: 1rem; }
 
@@ -21,10 +22,11 @@ h3, .textoFinanciacion {
 body {
   font-family: 'Ford Antenna', Open sans-serif; }
 
-/*SECTION 1 - CARROUSEL*/
+/*NAV*/
 .logo {
   width: 9rem; }
 
+/*SECTION 1 - CARROUSEL*/
 h1 {
   color: #FFFFFF;
   font-size: 4rem;
@@ -73,27 +75,28 @@ h3 {
     font-weight: medium; }
 
 /*SECTION 3 - OTROS MODELOS*/
-.otros__modelos {
+.otrosModelos {
   padding-top: 2rem;
   padding-left: 4rem; }
 
-.text__height {
+.textHeight {
   padding-bottom: 20%; }
 
-.titulo__tarjeta {
+.tituloTarjeta {
   font-size: 1rem;
   font-weight: bold;
   color: #0A121F; }
 
-.parrafo__tarjeta {
+.parrafoTarjeta {
   font-size: 1rem;
   font-weight: normal;
   color: #49596f; }
 
-.boton__modelos {
+.botonModelos {
   border-radius: 2rem;
   background-color: #0A121F;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  padding: 0.8rem; }
 
 /*SECTION 4 - VER SUCURSALES*/
 .sucursales {
@@ -199,7 +202,7 @@ form input[type="submit"]:hover {
     height: 25rem; }
   .linkCarrousel:hover {
     color: #FFFFFF; }
-  .otros__modelos {
+  .otrosModelos {
     padding-left: 1.2rem; } }
 
 @media only screen and (max-width: 480px) {
@@ -224,45 +227,43 @@ form input[type="submit"]:hover {
     width: 1rem; }
   h2 {
     font-size: 1.5rem; }
-  .otros__modelos {
+  .otrosModelos {
     padding-left: 2.2rem; }
   form {
     width: 95%; } }
 
 /*SECTION 1*/
-.imagenesOkm {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center; }
+.titulo {
+  margin-top: 10rem; }
 
-div button {
+.boton {
   background-color: #0A121F;
-  border: 0.063rem solid #0A121F;
   padding: 0.625rem;
-  margin-left: 1.875rem; }
-  div button a {
-    color: #FFFFFF;
-    text-decoration: none; }
+  margin: 2rem auto;
+  width: 15rem; }
 
-.parrafo0km {
-  text-align: center;
-  letter-spacing: 0.2rem;
-  font-size: 1.5rem;
-  color: #2367C6;
-  width: 25rem;
-  font-weight: bold;
-  margin: 4%; }
+.textoBoton {
+  color: #FFFFFF;
+  text-decoration: none; }
+  .textoBoton:hover {
+    color: #c2c2ce; }
 
 .financiacion {
   background-color: #2367C6;
-  height: 100px;
-  margin-bottom: 5rem; }
+  height: 8rem;
+  margin: 5rem auto; }
 
 .textoFinanciacion {
   color: #FFFFFF;
   text-align: center;
-  padding-top: 2.5rem;
-  font-size: 1.125rem; }
+  padding: 3rem;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.tituloLanzamiento {
+  color: #2367C6;
+  font-size: 1.125rem;
+  margin-left: 2rem; }
 
 .imagenMustang {
   margin-left: 2rem; }
@@ -270,37 +271,69 @@ div button {
 .textoMustang {
   color: #49596f;
   font-size: 1rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-left: 2rem; }
+
+@media only screen and (max-width: 768px) {
+  .titulo {
+    margin-top: 8rem; }
+  .financiacion {
+    background-color: #2367C6;
+    height: 100px;
+    margin-bottom: 5rem; }
+  .textoFinanciacion {
+    padding-top: 2.5rem;
+    font-size: 1.125rem; }
+  .imagenMustang {
+    margin-left: 2rem; }
+  .textoMustang {
+    color: #49596f;
+    font-size: 1rem;
+    font-weight: bold; } }
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 4.5rem; }
+  .titulo {
+    margin-top: 6rem; }
+  .textoFinanciacion {
+    padding-top: 0.8rem; } }
 
 /*SECCTION 1 - PORTADA*/
 .portada {
   display: flex;
   position: relative;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 4rem; }
 
-.h1Usados {
+.tituloUsados {
   color: #0B2D5E;
   font-size: 4.5rem;
   font-weight: bold;
   text-align: left;
   position: absolute;
   display: flex;
-  bottom: 4rem;
+  bottom: 0.2rem;
   margin-left: 2.5rem;
   animation: rollIn;
   animation-duration: 2s; }
 
 /*SECCTION 2 - GALERIA*/
+.divOportunidades {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-bottom: 4rem; }
+
 .fotosOportunidades {
   margin: 5% 5% 0% 5%;
   box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
 
-.divOportunidades {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
-
 /*SECTION 3 - BANNER*/
+.animacion {
+  animation: heartBeat;
+  animation-duration: 5s; }
+
 .banner {
   background-color: #d38a03;
   color: #FFFFFF;
@@ -320,35 +353,85 @@ div button {
 
 .iconosPosventa {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly; }
 
 .alineacion {
   padding: 1rem;
   font-size: 5.8rem; }
 
-/*SECCTION 1*/
-.parrafosPosventa {
-  font-size: 0.875rem;
-  line-height: 1.4rem;
-  color: #858288;
-  text-align: left;
-  width: 37.5rem; }
+@media only screen and (max-width: 768px) {
+  .portada {
+    margin-top: 4rem; }
+  .tituloUsados {
+    font-size: 2rem;
+    bottom: 39rem;
+    margin-left: 1.5rem; }
+  .textoBanner {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    margin: 5% 0% 0% 5%; } }
 
+@media only screen and (max-width: 480px) {
+  .portada {
+    margin-top: 3rem; }
+  .tituloUsados {
+    font-size: 0.95rem;
+    top: 11rem;
+    margin-left: 0.7rem; }
+  .animacion {
+    font-size: 1.5rem; }
+  .banner {
+    height: 10rem;
+    margin-bottom: 10%; }
+  .textoBanner {
+    font-size: 0.8rem;
+    letter-spacing: 0rem; }
+  .alineacion {
+    padding: 1.5rem;
+    font-size: 2.5rem; } }
+
+/*SECCTION 1*/
 .imagenesPosventa {
   display: flex;
-  margin: 3rem;
+  margin: 8rem 3rem 2rem 3rem;
   padding: 5% 0% 5% 0%;
   justify-content: space-around;
+  flex-flow: row wrap;
   align-items: flex-start;
   box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
 
-/*SECCTION 1*/
-.portadaNs {
+.parrafosPosventa {
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+  color: #49596f;
+  text-align: left;
+  width: 37.5rem; }
+
+@media only screen and (max-width: 768px) {
+  .tituloPosventa {
+    text-align: center; }
+  .form {
+    width: 87%; } }
+
+@media only screen and (max-width: 480px) {
+  .parrafosPosventa {
+    text-align: center;
+    padding: 1.5rem; }
+  .tituloFormulario {
+    font-size: 0.75rem;
+    margin: 1.5rem; }
+  .form {
+    width: 80%; } }
+
+/*SECCTION 1 PORTADA*/
+.portadaNosotros {
   display: flex;
   position: relative;
   justify-content: center;
   margin-top: 4rem; }
 
+/*ACCORDION*/
 .accordion {
   width: 75%;
   margin: 4rem auto; }
@@ -367,38 +450,36 @@ div button {
 .accordion-header {
   margin: 0.5rem; }
 
+.interlineado {
+  padding: 0;
+  margin-left: 1rem; }
+
+@media only screen and (max-width: 480px) {
+  .portadaNosotros {
+    margin-top: 3rem; } }
+
 /*SECCTION 2 - CARACTERISTICAS*/
+#myVideo {
+  margin-top: 3rem; }
+
 .parrafosBronco {
   font-size: 0.875rem;
-  font-style: italic;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   color: #49596f;
-  text-align: justify;
-  margin: 1.25rem;
-  padding: 1.563rem;
-  width: 37.5rem;
-  height: 18.75rem; }
+  text-align: left;
+  width: 60rem; }
 
-.imagenExterior {
+.imagenesBronco {
   display: flex;
-  text-align: center;
-  margin: 2rem;
-  padding: 5% 5% 0% 5%;
+  margin: 8rem 3rem 2rem 3rem;
+  padding: 5% 0% 5% 0%;
   justify-content: space-around;
+  flex-flow: row wrap;
   align-items: flex-start;
-  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68);
-  background: linear-gradient(-90deg, #fefeff 0%, #bed9e0 52%, #a4d3de 100%); }
+  background: linear-gradient(-90deg, #fefeff 0%, #bed9e0 52%, #a4d3de 100%);
+  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
 
-.imagenInterior {
-  display: flex;
-  text-align: center;
-  margin: 2rem;
-  padding: 4rem;
-  justify-content: space-around;
-  align-items: flex-start;
-  box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68);
-  background: linear-gradient(90deg, #fefeff 0%, #bed9e0 52%, #a4d3de 100%); }
-
+/*TABLA CON FICHA TÉCNICA DE BRONCO*/
 table {
   box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68);
   color: #49596f;
@@ -413,22 +494,50 @@ table {
     font-size: 1rem;
     padding: 0.938rem; }
 
-/*SECCTION 3 - OTROS MODELOS DE BRINCO*/
-.otrasBronco {
+/*SECCTION 3 - MÁS OPCIONES*/
+.opciones {
   margin: 2% 5% 5% 43%;
   box-shadow: 0px 3px 20px 3px rgba(106, 108, 113, 0.68); }
 
-.otrasBronco:hover {
+.opciones:hover {
   transform: scale(1.2, 1.2); }
+
+@media only screen and (max-width: 768px) {
+  #myVideo {
+    margin-top: 4rem; }
+  .tituloBronco {
+    text-align: center; }
+  .parrafosBronco {
+    line-height: 1.5rem;
+    width: 35rem;
+    margin-left: 2.3rem; }
+  .opciones {
+    margin: 2% 5% 5% 38%; } }
+
+@media only screen and (max-width: 480px) {
+  #myVideo {
+    margin-top: 3rem; }
+  .imagenesBronco {
+    margin: 4rem 1rem 2rem 1rem; }
+  .tituloBronco {
+    text-align: center; }
+  .parrafosBronco {
+    text-align: justify;
+    padding-right: 1.8rem; }
+  .opciones {
+    margin: 2% 5% 5% 25%; } }
 
 .tituloError {
   color: #0B2D5E;
-  font-size: 1.5rem;
-  text-align: center; }
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 4rem;
+  animation: rubberBand;
+  animation-duration: 2s; }
 
 .parrafo {
-  color: #49596f;
-  font-size: 1.5rem;
+  color: #0B2D5E;
+  font-size: 1.125rem;
   text-align: center; }
 
 .alineacion {
@@ -438,10 +547,14 @@ table {
 
 .botonVolver {
   color: #FFFFFF;
+  text-align: center;
   background-color: #0A121F;
   font-weight: bold;
-  border-radius: 1rem;
+  border-radius: 3rem;
+  width: 12rem;
   text-decoration: none;
   margin: 1.5rem;
-  padding: 0.4rem;
+  padding: 1.5rem;
   font-size: 1.125rem; }
+  .botonVolver:hover {
+    color: #c2c2ce; }

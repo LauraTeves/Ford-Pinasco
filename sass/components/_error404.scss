@@ -1,12 +1,15 @@
 
 .tituloError{
     color: $color-secundario;
-    font-size: map-get($tamaño-fuentes, h1);
+    font-size: 4rem;
     text-align: center;
+    margin-top: 4rem;
+    animation: rubberBand;
+    animation-duration: 2s;
 }
 .parrafo{
-    color: $color-parrafos;
-    font-size: map-get($tamaño-fuentes, h1);
+    color: $color-secundario;
+    font-size: map-get($tamaño-fuentes, h3);
     text-align: center;
 }
 .alineacion{
@@ -16,11 +19,16 @@
 }
 .botonVolver{
     color: $color-principal;
+    text-align: center;
     background-color: $color-botones;
     font-weight: bold;
-    border-radius: 1rem;
+    border-radius: 3rem;
+    width: 12rem;
     text-decoration: none;
     margin: 1.5rem;
-    padding: 0.4rem;
+    padding: 1.5rem;
     font-size: map-get($tamaño-fuentes, h3);
+    &:hover{
+        color: #c2c2ce;
+    }
 }

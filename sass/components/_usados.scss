@@ -3,30 +3,36 @@
     display: flex;
     position: relative;
     justify-content: center;
+    margin-top: 4rem;
 }
-.h1Usados{
+.tituloUsados{
     color: $color-secundario;
     font-size: 4.5rem;
     font-weight: bold;
     text-align: left;
     position: absolute;
     display: flex;
-    bottom: 4rem;
+    bottom: 0.2rem;
     margin-left: 2.5rem;
     animation: rollIn;
     animation-duration: 2s;
 }
 /*SECCTION 2 - GALERIA*/
+.divOportunidades{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
 .fotosOportunidades{
     margin: 5% 5% 0% 5%;
     box-shadow: 0px 3px 20px 3px rgba(106,108,113,0.68);
 }
-.divOportunidades{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
 /*SECTION 3 - BANNER*/
+.animacion{
+    animation: heartBeat;
+    animation-duration: 5s;
+}
 .banner{
     background-color: #d38a03;
     color: $color-principal;
@@ -46,10 +52,51 @@
 }
 .iconosPosventa{
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
-    
 }
 .alineacion{
     padding: 1rem;
     font-size: 5.8rem;
 }
+@media only screen and (max-width:768px){
+    .portada{
+        margin-top: 4rem;
+    }
+    .tituloUsados{
+        font-size: 2rem;
+        bottom: 39rem;
+        margin-left: 1.5rem;
+    }
+    .textoBanner{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        margin: 5% 0% 0% 5%;
+    }   
+}
+@media only screen and (max-width:480px){
+    .portada{
+        margin-top: 3rem;
+    }
+    .tituloUsados{
+        font-size: 0.95rem;
+        top: 11rem;
+        margin-left: 0.7rem;        
+    }
+    .animacion{
+        font-size: 1.5rem;
+    }
+    .banner{
+        height: 10rem;
+        margin-bottom: 10%;
+    }
+    .textoBanner{
+        font-size: 0.8rem;
+        letter-spacing: 0rem;
+    }
+    .alineacion{
+        padding: 1.5rem;
+        font-size: 2.5rem;
+    }
+}
+
