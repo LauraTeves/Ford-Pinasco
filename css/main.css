@@ -228,7 +228,7 @@ form input[type="submit"]:hover {
   h2 {
     font-size: 1.5rem; }
   .otrosModelos {
-    padding-left: 2.2rem; }
+    padding-left: 4rem; }
   form {
     width: 95%; } }
 
@@ -297,7 +297,12 @@ form input[type="submit"]:hover {
   .titulo {
     margin-top: 6rem; }
   .textoFinanciacion {
-    padding-top: 0.8rem; } }
+    padding-top: 1.1rem; }
+  .alineacionMobile {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-right: 1rem; } }
 
 /*SECCTION 1 - PORTADA*/
 .portada {
@@ -380,7 +385,7 @@ form input[type="submit"]:hover {
     top: 11rem;
     margin-left: 0.7rem; }
   .animacion {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .banner {
     height: 10rem;
     margin-bottom: 10%; }
@@ -415,6 +420,8 @@ form input[type="submit"]:hover {
     width: 87%; } }
 
 @media only screen and (max-width: 480px) {
+  .imagenesPosventa {
+    margin: 6rem 1rem 4rem 1rem; }
   .parrafosPosventa {
     text-align: center;
     padding: 1.5rem; }
