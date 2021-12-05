@@ -312,7 +312,7 @@ form input[type="submit"]:hover {
   margin-top: 4rem; }
 
 .tituloUsados {
-  color: #0B2D5E;
+  color: #32c6cc;
   font-size: 4.5rem;
   font-weight: bold;
   text-align: left;
@@ -381,8 +381,8 @@ form input[type="submit"]:hover {
   .portada {
     margin-top: 3rem; }
   .tituloUsados {
-    font-size: 0.95rem;
-    top: 11rem;
+    font-size: 1.1rem;
+    top: 12rem;
     margin-left: 0.7rem; }
   .animacion {
     font-size: 1.3rem; }
